@@ -1,0 +1,40 @@
+package Day1;
+import java.util.*;
+import javafx.util.Pair;
+public class Tutor {
+
+	public static void main(String[] args) {
+		Pair<Integer, String> pair = new Pair<>(1, "One");
+		System.out.println(pair.getKey()+" "+pair.getValue()); // 1 One
+
+		Pair<Integer, String> pair2 = new Pair<>(2, "Two");
+		System.out.println(pair2.getKey()+" "+pair2.getValue()); // 2 Two
+		System.out.println(pair.equals(pair2));
+	    System.out.println(pair2.getValue().compareTo(pair.getValue()));
+		
+	    System.out.println("---------");
+	    
+	    Vector v = new Vector<>(); //可以存任一型態陣列
+	    v.add(new Integer(12));//都會存到陣列最後
+	    v.add(new Long(34L));
+	    v.add(new Float(5.6f));
+	    v.add(new Double(7.8));
+	    v.add(new String("Hello"));
+	    
+	    System.out.println("Firsh："+v.firstElement());
+	    System.out.println("GetIndex1："+v.get(1));
+		  
+
+	    for (int i = 0 ; i < v.size() ; i++){ //size()得到Vector大小
+	         Object obj = v.get(i);
+	         System.out.println(obj); 
+	    }
+	    
+	    System.out.println("---------");
+	    
+	    Deque<Integer> deque = new LinkedList<>();
+	    deque.addFirst(0);
+	    deque.addLast(1);
+	}
+
+}

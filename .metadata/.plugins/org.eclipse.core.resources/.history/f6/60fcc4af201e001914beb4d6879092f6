@@ -1,0 +1,105 @@
+package Day2;
+
+import java.util.*;
+
+public class E_Oil_Deposits {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			String[] input = sc.nextLine().split(" ");
+			if (input[0].equals("0") && input[1].equals("0"))
+				break;
+
+			String[][] map = new String[Integer.parseInt(input[0])][Integer.parseInt(input[1])];
+
+			for (int n = 0; n < map.length; n++) {
+				char[] in = sc.nextLine().toCharArray();
+				int nth = 0;
+				for (char text : in) {
+					map[n][nth] = String.valueOf(text);
+					nth++;
+				}
+			}
+
+			if (found(map, "@")[0] == -1)
+				System.out.println("0");
+			else {
+				int nth = 1;
+				int x = 0;
+				int y = 0;
+				while (true) {
+					go_found(map, x, y, "@", String.valueOf(nth));
+
+					for (int n = 0; n < map.length; n++) {
+						for (int nn = 0; nn < map[n].length; nn++) {
+							System.out.print(map[n][nn]);
+						}
+						System.out.println();
+					}
+					System.out.println("==========");
+
+					int[] result = found(map, String.valueOf(nth));
+					if (result[0] >= 0) {
+						result = found(map, "@");
+						if (result[0] >= 0) {
+							x = result[0];
+							y = result[1];
+							nth++;
+						} else {
+							break;
+						}
+
+					}
+					int[] resultfinal = found(map, "@");
+					if (resultfinal[0] == -1) {
+						System.out.println(nth);
+						return;
+					} else {
+						x = resultfinal[0];
+						y = resultfinal[1];
+					}
+
+				}
+			}
+
+		}
+
+	}
+
+	public static int[] found(String[][] map, String aims) {
+		for (int n = 0; n < map.length; n++) {
+			for (int nn = 0; nn < map[n].length; nn++) {
+				if (map[n][nn].equals(aims))
+					return new int[] { nn, n };
+			}
+		}
+		return new int[] { -1 };
+	}
+
+	public static void go_found(String[][] map, int x, int y, String aims, String change) {
+		if (x < 0 || y < 0)
+			return;
+		if (map.length == y)
+			return;
+		if (map[y].length == x)
+			return;
+		if (map[y][x].equals(aims)) {
+			map[y][x] = change;
+			go_found(map, --x, y, aims, change);//左
+			go_found(map, --x, ++y, aims, change);//左上
+			go_found(map, x, ++y, aims, change);//上
+			go_found(map, ++x, y, aims, change);//右		
+			go_found(map, x, --y, aims, change);//下
+
+			go_found(map, --x, --y, aims, change);//左下
+			go_found(map, ++x, ++y, aims, change);//右上
+			
+
+			go_found(map, ++x, --y, aims, change);//右下
+			
+		}
+
+	}
+
+}

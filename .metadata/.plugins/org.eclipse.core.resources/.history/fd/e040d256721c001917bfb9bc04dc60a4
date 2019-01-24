@@ -1,0 +1,31 @@
+package Day1;
+import java.util.*;
+public class A_Petr_and_a_Combination_Lock {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int nth=Integer.parseInt(sc.nextLine());
+		int[] arr=new int[nth];
+		for(int n=0;n<nth;n++) {
+			arr[n]=Integer.parseInt(sc.nextLine());
+		}
+		
+	}
+	public boolean ans(int[] arr,int index,int sum) {
+		sum+=arr[index];
+		if(ans(arr,index++,sum)) {
+			return true;
+		}
+		else {
+			sum -=arr[index];
+			if(ans(arr,index++,sum)) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+		
+	}
+
+}

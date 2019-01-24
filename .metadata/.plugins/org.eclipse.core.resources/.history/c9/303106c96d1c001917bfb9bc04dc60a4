@@ -1,0 +1,32 @@
+package Day1;
+import java.util.*;
+import javafx.util.Pair;
+public class Tutor {
+
+	public static void main(String[] args) {
+		Pair<Integer, String> pair = new Pair<>(1, "One");
+		Integer key = pair.getKey();
+	    String value = pair.getValue();
+	    System.out.println(key);
+	    System.out.println(value);
+	    
+	    Pair<Integer, String> pair = new Pair<>(2, "One");
+		Integer key = pair.getKey();
+	    String value = pair.getValue();
+	    
+	    System.out.println("---------");
+	    
+	    Vector v = new Vector<>(); //可以存任一型態陣列
+	    v.add(new Integer(12));//都會存到陣列最後
+	    v.add(new Long(34L));
+	    v.add(new Float(5.6f));
+	    v.add(new Double(7.8));
+	    v.add(new String("Hello"));
+
+	    for (int i = 0 ; i < v.size() ; i++){ //size()得到Vector大小
+	         Object obj = v.get(i);
+	         System.out.println(obj); 
+	    }
+	}
+
+}

@@ -1,0 +1,10 @@
+package Day2;
+import java.util.*;
+
+public class tutor {
+
+	public static void main(String[] args) {
+Vector<Integer,String> vec=new Vector<Integer,String>();
+	}
+
+}

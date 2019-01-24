@@ -1,0 +1,27 @@
+package Day2;
+
+import java.util.*;
+
+public class tutor {
+
+	public static void main(String[] args) {
+		map[] mp = new map[10];
+		for (int n = 0; n < mp.length; n++) {
+			mp[n] = new map();
+		mp[n].que=new LinkedList<>();
+		}
+	
+		mp[0].group = 10;
+		mp[0].que.add(123);
+
+		System.out.println(mp[0].group + ". " + mp[0].que.poll());
+
+	}
+
+}
+
+class map {
+	public int group;
+	public Queue<Integer> que;
+
+}

@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\B_Depth First Search\bin\Debug\B_Depth First Search.exe.config
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\B_Depth First Search\bin\Debug\B_Depth First Search.exe
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\B_Depth First Search\bin\Debug\B_Depth First Search.pdb
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\B_Depth First Search\obj\Debug\B_Depth First Search.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\B_Depth First Search\obj\Debug\B_Depth First Search.exe
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\B_Depth First Search\obj\Debug\B_Depth First Search.pdb
+C:\Users\Ironx\Documents\NCTU PCCA\2019 NCTUPCCA_Winter\C#\Day2\B_Depth First Search\bin\Debug\B_Depth First Search.exe.config
+C:\Users\Ironx\Documents\NCTU PCCA\2019 NCTUPCCA_Winter\C#\Day2\B_Depth First Search\bin\Debug\B_Depth First Search.exe
+C:\Users\Ironx\Documents\NCTU PCCA\2019 NCTUPCCA_Winter\C#\Day2\B_Depth First Search\bin\Debug\B_Depth First Search.pdb
+C:\Users\Ironx\Documents\NCTU PCCA\2019 NCTUPCCA_Winter\C#\Day2\B_Depth First Search\obj\Debug\B_Depth First Search.csprojAssemblyReference.cache
+C:\Users\Ironx\Documents\NCTU PCCA\2019 NCTUPCCA_Winter\C#\Day2\B_Depth First Search\obj\Debug\B_Depth First Search.csproj.CoreCompileInputs.cache
+C:\Users\Ironx\Documents\NCTU PCCA\2019 NCTUPCCA_Winter\C#\Day2\B_Depth First Search\obj\Debug\B_Depth First Search.exe
+C:\Users\Ironx\Documents\NCTU PCCA\2019 NCTUPCCA_Winter\C#\Day2\B_Depth First Search\obj\Debug\B_Depth First Search.pdb

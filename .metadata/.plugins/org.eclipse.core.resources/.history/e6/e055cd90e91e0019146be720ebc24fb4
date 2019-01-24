@@ -1,0 +1,29 @@
+package Day3;
+import java.util.*;
+public class C_Grid {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		for(int nth=Integer.parseInt(sc.nextLine());nth>0;nth--) {
+			String[] input=sc.nextLine().split(" ");
+			int[][] arr=new int[Integer.parseInt(input[0])][Integer.parseInt(input[1])];
+			for(int n=0;n<arr.length;n++) {
+				String[] input2=sc.nextLine().split(" ");
+				for(int nn=0;nn<input2.length;nn++) {
+					arr[n][nn]=Integer.parseInt(input2[nn]);
+				}
+			}
+			
+		}
+	}
+	public static int sum=0;
+	public static void gogo(int[][] arr,int x,int y) {
+		if(arr[y].length>=x) return;
+		if(arr[y][x]>0)--arr[y][x];
+		gogo(arr,x+1,y);
+		sum++;
+		gogo(arr,x,y-1);
+		
+	}
+
+}

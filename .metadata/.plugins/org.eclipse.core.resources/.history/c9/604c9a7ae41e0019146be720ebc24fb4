@@ -1,0 +1,104 @@
+package Day3;
+
+import java.util.*;
+
+class man{
+	public Queue<Integer> que;
+}
+
+public class B_T_shirts_Distribution {
+	public static source[] sr = new source[6];	
+	public static String[] man_sort;
+	public static man[] man_list;
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		sr[0] = new source();
+		sr[1] = new source();
+		sr[2] = new source();
+		sr[3] = new source();
+		sr[4] = new source();
+		sr[5] = new source();
+
+		sr[0].Group = "S";
+		sr[1].Group = "M";
+		sr[2].Group = "L";
+		sr[3].Group = "XL";
+		sr[4].Group = "XXL";
+		sr[5].Group = "XXXL";
+
+		String[] input = sc.nextLine().split(" ");
+		for (int n = 0; n < input.length; n++)
+			if (!input[n].equals("0"))
+				sr[n].size+=Integer.parseInt(input[n]);
+		
+		man_list=new man[ Integer.parseInt(sc.nextLine()) ];
+		man_sort = new String[man_list.length];
+		for (int nth = 0; nth < man_sort.length; nth++) {
+			String[] input2 = sc.nextLine().split(",");
+			man_list[nth].que=new LinkedList<>();
+			for(int n=0;n<input2.length;n++) {
+				man_list[nth].que.add( size_index(input2[n]) );
+			}
+		}
+
+		sort(0);
+		Boolean test = true;
+		for (int n = 0; n < man_sort.length; n++) {
+			if (man_sort[n] == null) {
+				test = false;
+				break;
+			}
+		}
+		if (test) {
+			System.out.println("YES");
+			for (int n = 0; n < mans.length; n++)
+				System.out.println(man_sort[n]);
+		} else
+			System.out.println("NO");
+	}
+
+	public static int size_index(String size) {
+		for (int n = 0; n < sr.length; n++)
+			if (size.equals(sr[n].Group))
+				return n;
+		return -1;
+	}
+
+	public static void sort(int number) {
+
+		if (mans[number].qu.size()<=0)
+			return;
+
+		int size = mans[number].qu.poll();
+		if (sr[size].size <= 0) {
+			sort(number);
+			return;
+		}
+			
+
+		man_sort[number] = sr[size].Group;
+
+		sr[size].size--;
+
+		Boolean test = false;
+		for (int n = 0; n < man_sort.length; n++) {
+			if (man_sort[n] == null) {
+				test = true;
+				break;
+			}
+		}
+		if (test) {
+			sort(number + 1);			
+		}
+
+	}
+
+}
+
+class source {
+	public String Group;
+	public int size;
+}
+
+

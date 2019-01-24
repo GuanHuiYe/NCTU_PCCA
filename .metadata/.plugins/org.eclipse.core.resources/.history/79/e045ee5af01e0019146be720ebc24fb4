@@ -1,0 +1,17 @@
+package Day2;
+
+import java.util.*;
+
+public class G_Ordering_Tasks {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	    LinkedList<String> list = new LinkedList<String>();  
+		while (true) {
+			String[] input = sc.nextLine().split(" ");
+			
+			
+		}
+	}
+
+}

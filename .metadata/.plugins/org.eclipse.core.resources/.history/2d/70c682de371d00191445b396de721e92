@@ -1,0 +1,15 @@
+package Day2;
+
+import java.util.*;
+
+public class tutor {
+
+	public static void main(String[] args) {
+class test {
+		int index;
+		String str;
+}
+
+	}
+
+}

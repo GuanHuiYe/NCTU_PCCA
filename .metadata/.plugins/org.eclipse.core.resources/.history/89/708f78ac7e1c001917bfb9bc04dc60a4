@@ -1,0 +1,43 @@
+package Day1;
+import java.util.*;
+
+public class B_Ehab_and_subtraction {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String[] input=sc.nextLine().split(" ");		
+		String[] input2=sc.nextLine().split(" ");
+		int[] intarr=new int[Integer.parseInt(input[0])];
+		for(int n=0;n<Integer.parseInt(input[0]);n++) {
+			intarr[n]=Integer.parseInt(input2[n]);
+		}
+		Arrays.sort(intarr);
+	    int[] ansarr=new int[Integer.parseInt(input[0])];
+	    int nth=0;
+		for(int n=0,k=0;nth<Integer.parseInt(input[1]);n++,k++) {
+			if(nth<intarr.length) {
+				if(n>0) {
+					if(intarr[n]-ansarr[k-1]<=0) {
+						--k;
+						continue;
+						}
+					System.out.println(intarr[n]-ansarr[k-1]);
+					ansarr[nth]=intarr[n]-ansarr[k-1];
+					nth++;
+				}
+				else {
+					System.out.println(intarr[n]-n);
+					ansarr[nth]=intarr[n]-n;
+					nth++;
+				}
+				
+			}
+			else {
+				System.out.println(0);
+				nth++;
+			}
+		}
+
+	}
+
+}

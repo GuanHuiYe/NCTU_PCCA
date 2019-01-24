@@ -1,0 +1,19 @@
+package Day2;
+
+import java.util.*;
+
+public class tutor {
+
+	public static void main(String[] args) {
+		map[] mp=new map[10];
+		
+
+	}
+
+}
+
+class map{
+	public int group;
+	public Queue<Integer> que;
+	
+}

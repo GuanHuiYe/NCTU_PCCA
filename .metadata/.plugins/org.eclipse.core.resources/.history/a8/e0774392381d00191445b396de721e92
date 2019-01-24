@@ -1,0 +1,18 @@
+package Day2;
+
+import java.util.*;
+
+public class tutor {
+	public class test {
+		public int index;
+		public String str;
+	}
+	public static void main(String[] args) {
+		
+		Vector<test> v=new Vector<test>();
+		v.add(new test(1,"234"));
+		
+
+	}
+
+}

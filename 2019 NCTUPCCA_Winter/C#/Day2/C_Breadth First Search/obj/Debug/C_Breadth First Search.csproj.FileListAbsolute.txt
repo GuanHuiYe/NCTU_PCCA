@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\C_Breadth First Search\bin\Debug\C_Breadth First Search.exe.config
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\C_Breadth First Search\bin\Debug\C_Breadth First Search.exe
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\C_Breadth First Search\bin\Debug\C_Breadth First Search.pdb
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\C_Breadth First Search\obj\Debug\C_Breadth First Search.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\C_Breadth First Search\obj\Debug\C_Breadth First Search.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\C_Breadth First Search\obj\Debug\C_Breadth First Search.exe
+C:\Users\Administrator\Documents\NCTUPCCA\Day 2\Day2\C_Breadth First Search\obj\Debug\C_Breadth First Search.pdb
